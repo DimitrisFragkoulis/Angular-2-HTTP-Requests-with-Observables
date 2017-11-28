@@ -15,7 +15,8 @@ import { EmitterService }          from './emitter.service';
     FormsModule,
      HttpModule,
     JsonpModule,
-    CommentModule
+    CommentModule,
+ 
     
   ],
   declarations: [

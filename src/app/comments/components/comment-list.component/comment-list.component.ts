@@ -14,7 +14,7 @@ import { EmitterService } from '../../../emitter.service';
         *ngFor="let comment of comments" 
         [comment]="comment">
     </comment-box>
-    `
+   `,
 })
 export class CommentListComponent implements OnInit, OnChanges{
   

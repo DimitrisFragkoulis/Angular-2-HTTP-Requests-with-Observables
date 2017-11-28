@@ -17,7 +17,7 @@ module.exports.translate = function(load){
   baseHref.href = this.baseURL;
   baseHref = baseHref.pathname;
 
-  if (!baseHref.startsWith('/base/')) { // it is not karma
+  if (!baseHref.startsWith('/base/')) { 
     basePath = basePath.replace(baseHref, '');
   }
 
