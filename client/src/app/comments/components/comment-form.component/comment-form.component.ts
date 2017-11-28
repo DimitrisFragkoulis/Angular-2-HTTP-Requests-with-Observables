@@ -40,11 +40,11 @@ export class CommentFormComponent implements OnChanges {
      submitComment(){
         let commentOperation:Observable<Comment[]>;
 
-        // if(!this.editing){
-        //     commentOperation = this.commentService.addComment(this.model)
-        // } else {
-        //      commentOperation = this.commentService.updateComment(this.model)
-        // }
+        if(!this.editing){
+            commentOperation = this.commentService.addComment(this.model)
+        } else {
+             commentOperation = this.commentService.updateComment(this.model)
+        }
 
 
         commentOperation.subscribe(
