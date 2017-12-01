@@ -9,7 +9,7 @@ export class CommentService {
 
     constructor(private http: Http) { }
 
-    private commentsUrl = 'http://localhost:3000/api/comments';
+    private commentsUrl = 'http://localhost:8000/api/comments';
     getComments(): Observable<Comment[]> {
         return this.http.get(this.commentsUrl)
             .map((res: Response) => res.json())

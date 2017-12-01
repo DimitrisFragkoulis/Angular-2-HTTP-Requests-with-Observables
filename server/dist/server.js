@@ -28,6 +28,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 // import multer from 'multer';
 
+
 var Server = function () {
     function Server() {
         _classCallCheck(this, Server);
@@ -42,7 +43,7 @@ var Server = function () {
     _createClass(Server, [{
         key: 'configureApp',
         value: function configureApp() {
-            this.app.set('port', process.env.PORT || 3000);
+            this.app.set('port', process.env.PORT || 8000);
             // this.app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
             this.app.use(_bodyParser2.default.json());
             this.app.use(_bodyParser2.default.urlencoded({ extended: true }));

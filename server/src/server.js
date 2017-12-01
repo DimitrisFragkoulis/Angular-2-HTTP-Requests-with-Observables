@@ -16,7 +16,7 @@ class Server {
     }
 
     configureApp() {
-        this.app.set('port', (process.env.PORT || 3000));
+        this.app.set('port', (process.env.PORT || 8000));
         // this.app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({extended: true}));

@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Observable';
 import { CommentService } from '../../services/comment.service';
 import { EmitterService } from '../../../emitter.service';
 
+import { Comment } from '../../model/comment';
+
 
 @Component({
     selector: 'comment-list',
